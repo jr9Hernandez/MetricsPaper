@@ -79,13 +79,13 @@ public class LevelSceneTest extends LevelScene {
 				//currentLevel = (Level) level.generateLevel(gp);		
 				
 				/*************test HCTA Generator***********************/
-				//currentLevel = LevelGenerator.createLevel(320, 15, levelSeed, levelDifficulty, levelType);
+				currentLevel = LevelGenerator.createLevel(320, 15, levelSeed, levelDifficulty, levelType);
 				
 				/*************test metrics gral***********************/
-				ReadXsl objRead=new ReadXsl(); 
-				objRead.reading(320, 15, levelSeed, levelDifficulty, levelType);
+				//ReadXsl objRead=new ReadXsl(); 
+				//objRead.reading(320, 15, levelSeed, levelDifficulty, levelType);
 				//objRead.compresionDistance(320, 15, levelSeed, levelDifficulty, levelType);
-			    currentLevel = LevelGenerator.createLevel(320, 15, levelSeed, levelDifficulty, levelType);
+			    //currentLevel = LevelGenerator.createLevel(320, 15, levelSeed, levelDifficulty, levelType);
 			    //System.out.println("El width é"+currentLevel.getWidth());
 			    
 			    /*************test Individual***********************/
