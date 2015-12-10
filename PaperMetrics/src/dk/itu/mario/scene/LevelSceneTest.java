@@ -78,8 +78,10 @@ public class LevelSceneTest extends LevelScene {
 				//PetLevelGenerator level = new PetLevelGenerator();
 				//currentLevel = (Level) level.generateLevel(gp);		
 				
+				/*************test HCTA Generator***********************/
+				//currentLevel = LevelGenerator.createLevel(320, 15, levelSeed, levelDifficulty, levelType);
 				
-				/*************test gral***********************/
+				/*************test metrics gral***********************/
 				ReadXsl objRead=new ReadXsl(); 
 				objRead.reading(320, 15, levelSeed, levelDifficulty, levelType);
 				//objRead.compresionDistance(320, 15, levelSeed, levelDifficulty, levelType);
