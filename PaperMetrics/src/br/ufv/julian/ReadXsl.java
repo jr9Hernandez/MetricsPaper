@@ -50,9 +50,9 @@ public class ReadXsl {
 		String tipo;
 		int counterPeter =0;
 		try {
-			FileOutputStream fileOut = new FileOutputStream("D:\\MESTRADO2014\\pesquisa2\\metrics\\resultados\\PETER\\poi-test.xls");
+			FileOutputStream fileOut = new FileOutputStream("Metrics\\results.xls");
 			InputStream input = new BufferedInputStream(new FileInputStream(
-					"D:\\MESTRADO2014\\pesquisa2\\metrics\\resultados\\PETER\\arquivo.xls"));
+					"Metrics\\poi-test_pure.xls"));
 			POIFSFileSystem fs = new POIFSFileSystem(input);
 			HSSFWorkbook wb = new HSSFWorkbook(fs);
 			HSSFSheet sheet = wb.getSheetAt(0);
@@ -230,7 +230,7 @@ public class ReadXsl {
 			
 			 
 			InputStream input = new BufferedInputStream(new FileInputStream(
-					"D:\\MESTRADO2014\\pesquisa2\\metrics\\resultados\\PETER\\arquivo.xls"));
+					"Metrics\\poi-test_pure.xls"));
 			POIFSFileSystem fs = new POIFSFileSystem(input);
 			HSSFWorkbook wb = new HSSFWorkbook(fs);
 			HSSFSheet sheet = wb.getSheetAt(0);
@@ -307,10 +307,10 @@ public class ReadXsl {
 		
 		
 		try {			
-			BufferedWriter outw1 = new BufferedWriter(new FileWriter("D:\\MESTRADO2014\\pesquisa2\\metrics\\resultados\\PETER\\CompresionW1.txt"));
-			BufferedWriter outw2 = new BufferedWriter(new FileWriter("D:\\MESTRADO2014\\pesquisa2\\metrics\\resultados\\PETER\\CompresionW2.txt"));
-			BufferedWriter outp = new BufferedWriter(new FileWriter("D:\\MESTRADO2014\\pesquisa2\\metrics\\resultados\\PETER\\CompresionP.txt"));
-			BufferedWriter outr = new BufferedWriter(new FileWriter("D:\\MESTRADO2014\\pesquisa2\\metrics\\resultados\\PETER\\CompresionR.txt"));
+			BufferedWriter outw1 = new BufferedWriter(new FileWriter("Metrics\\CompresionW1.txt"));
+			BufferedWriter outw2 = new BufferedWriter(new FileWriter("Metrics\\CompresionW2.txt"));
+			BufferedWriter outp = new BufferedWriter(new FileWriter("Metrics\\CompresionP.txt"));
+			BufferedWriter outr = new BufferedWriter(new FileWriter("Metrics\\CompresionR.txt"));
 			
 			for(int i=0;i<countwill1Array;i++)
 			{
